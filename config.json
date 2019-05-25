@@ -1,0 +1,13 @@
+{
+  "mongodb" : {
+    "name": "the_plan_db",
+    "server" : "mongodb://localhost:27017/the_plan_db"
+  },
+
+  "SALT_WORK_FACTOR": 15,
+  "SECRET_TOKEN": "---%%%TODOSPENSAMOSenCOSAS%%%---",
+  "SECRET_KEY": "---%$%ToDoLoParecido713n3SuParecido%$%---",
+  "SENDGRID_USERNAME": "app102437854@heroku.com",
+  "SENDGRID_PASSWORD": "ba2uxqi84596",
+  "TO":"nicolassuarez.cabrera@gmail.com"
+}

@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/* ----- */
+
+
+.you-dare {
+  margin-top: 15vh;
+  color: #C5187A;
+  font-size: 20px;
+  font-weight: 700;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.you-dare img {
+  width: 30px;
+}
+
+.you-dare-text {
+  position: relative;
+}
+
+.you-dare-text::after {
+  content: " ";
+  width: 33%;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background: #EBEBEB;
+} 
+
+.you-dare-text::before {
+  content: " ";
+  width: 33%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  background: #EBEBEB;
+} 
+
+.header img {
+  width: 100%;
+}
+
+.text {
+  display: block;
+  background-color: white;
+  margin-top: 20vh; 
+}
+
+.box {
+  padding: 0px 20px;
+  margin: 5px 10px;
+  background: #f1f1f1;
+  min-width: 200px;
+  color: #C5187A;
+  font-weight: 900;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px; 
+  -webkit-transition:all 0.6s;
+  -moz-transition:all 0.6s;
+}
+
+.active {
+  width: 200px;
+  display: block;
+  padding: 20px;
+  background: #C5187A;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 50px auto;
+}
+
+.text p {
+  font-size: 28.24px;
+  color: #282828;
+  font-weight: 400;
+  line-height: 59.7px;
+  display: block;
+  margin: 0 auto;
+  max-width: 947px;
+
+}
+
+
+.sub_email {
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid #E4E4E4;
+  padding: 0 20px;
+  width: 400px;
+  margin-right: 10px;
+}
+
+.sub_email::placeholder{
+  color: #CECECE;
+}
+
+
+.link , .btn-more {
+  background: #C5187A;
+  height: 60px;
+  width: auto;
+  padding: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.link:hover, .btn-more:hover {
+  background: rgb(231, 45, 151);
+  text-decoration: none;
+}
+
+
+.c-subscribe {
+  font-size: 20px;
+  margin-bottom:  10vh; 
+}
+
+.c-subscribe img {
+  width: 30px;
+}
+
+.mv5 {
+  margin: 2vh 0;
+}
+
+.a-subscribe:hover {
+  text-decoration-color: #C5187A;
+}

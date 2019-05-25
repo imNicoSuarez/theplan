@@ -1,0 +1,121 @@
+extends layout
+
+block content
+  .o-section.u-height--100.u-background--text-1
+    .u-height--100.u-1-of-1
+      .o-wrapper.u-height--100.u-max-width--1024
+        .o-box
+          .o-box__stuff
+            .c-logo
+              img(src="/images/hoho.png", alt="Hoho Challenge" class="u-max-width--600")
+            .u-1-of-1
+              .text
+                p
+                  | The challenge of the week is to design a  
+                  
+                  span#selection-enviroment(class='box') 
+                    
+
+                  | that deals with  
+                  
+                  span#selection-object-one(class='box')
+                    
+                
+                  | and contains
+
+                  span#selection-object-two(class='box')
+                    
+            br
+            br
+            .u-1-of-1
+              a(href="#subscribe", class='btn-more')
+                | Subscribe, It's Free !!
+
+            .u-1-of-1    
+              div.you-dare
+                div 
+                  img(src="/images/suspect.png", alt="Suspect")
+                div.you-dare-text
+                  | YOU DARE
+
+  .o-section.u-height--100.u-background--secondary
+    .u-height--100.u-1-of-1
+      .o-wrapper.u-height--100.u-max-width--800
+        .c-title
+          | Challenge 
+          span.c-text-color-pink
+            | rules
+
+        .c-rules-list 
+          ul
+            li
+              .c-rule
+                | Design something creative according to the weekly draw.
+            li
+              .c-rule
+                | When you have your design soon, publish a tweet with the hashtag 
+                a.a-subscribe(href='https://twitter.com/search?src=typd&q=%23hohochallenge', target="_blank")
+                  span.c-text-color-pink
+                    | #hohochallenge, 
+                |it is very important for others to see your creation.
+            li 
+              .c-rule
+                | The challenge only lasts 1 week, so try to publish it before the challenge is closed.
+            li
+              .c-rule
+                a.a-subscribe(href="#subscribe")
+                  span.c-text-color-pink
+                    | Subscribe 
+                | to receive the challenges weekly. 
+                span.c-text-color-pink
+                  | It's free    
+            li
+              .c-rule
+                | Join our 
+                a.a-subscribe(href="https://join.slack.com/t/hohochallente/shared_invite/enQtNDAzMTI1NzQ0MTYzLTlhZDgyMWQ1NWZhYjEwMjlmZjY2NjA2YzU3YjY3MjhmZWU1NWRkZWMxMzhlOTE4NTY3OGY3MGI5NzFlOTVmMWQ")
+                  span.c-text-color-pink
+                    | #slack  
+        
+
+
+
+
+  .u-height--100
+    .u-height--100.u-1-of-1
+      .o-wrapper.u-height--100.u-max-width--1024
+        .c-title.c-title--small
+          | Some have already accepted the challenge, 
+          span.c-text-color-pink
+            | do not stay out
+        .c-tweets.o-layout
+          //- each tweet in tweets
+          //-   a.c-tweet.u-1-of-3.o-layout__item(href=tweet.profile_link, target="_blank")
+          //-     .c-tweet__image
+          //-       img(src=tweet.img_link, alt="Challenge Images")
+          //-     .c-tweet__profile
+          //-       img(src=tweet.img_profile_link, alt="Profile Images")
+        .u-1-of-1
+          a(href='https://twitter.com/search?src=typd&q=%23hohochallenge', target="_blank", class='btn-more')
+            | View more challenge
+
+  #subscribe.o-section.u-height--100.u-background--text-2
+    .u-height--100.u-1-of-1
+      .o-wrapper.u-height--100.u-max-width--800
+        .o-box
+          .o-box__stuff
+            .c-subscribe
+              div.mv5 
+                  img(src="/images/wink.png", alt="Wink")
+              span.c-text-color-pink
+                | Subscribe 
+              | to receive the weekly challenge. 
+              div.mv5
+                span.c-text-color-pink
+                  | IT'S FREE
+            div.subs
+              form(action="/api/subscriptions", method="post")
+                input(type="email", name="email", class="sub_email", placeholder="Enter your email here ")
+                a(href="#", class="link")
+                  | Subscribe
+            div.c-message
+
